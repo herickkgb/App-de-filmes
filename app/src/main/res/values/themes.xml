@@ -6,4 +6,18 @@
     </style>
 
     <style name="Theme.AppDeFilmes" parent="Base.Theme.AppDeFilmes" />
+
+    <style name="NetflixTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/netflixRed</item>
+        <item name="colorPrimaryDark">@color/netflixBlack</item>
+        <item name="colorAccent">@color/netflixRed</item>
+        <!-- Outros atributos do tema -->
+    </style>
+
+    <style name="ProgressBarNetflix" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/netflixRed</item>
+        <item name="android:indeterminateTint">@color/netflixRed</item>
+    </style>
+
+
 </resources>

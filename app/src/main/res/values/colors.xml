@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="netflixRed">#E50914</color> <!-- Vermelho do Netflix -->
+    <color name="netflixBlack">#000000</color> <!-- Preto do Netflix -->
+
+
 </resources>

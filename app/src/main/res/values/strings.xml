@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">App de Filmes</string>
+    <string name="nome_do_app_splashArt">DevFlix</string>
 </resources>
