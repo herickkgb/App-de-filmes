@@ -19,5 +19,11 @@
         <item name="android:indeterminateTint">@color/netflixRed</item>
     </style>
 
+    <style name="margin20dp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Definindo as margens start e end -->
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
 
 </resources>

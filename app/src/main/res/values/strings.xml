@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">App de Filmes</string>
-    <string name="nome_do_app_splashArt">DevFlix</string>
+    <string name="nome_do_app_splashArt">App de Filmes</string>
+    <string name="novo_por_aqui_inscreva_se_agora">Novo por aqui? Inscreva-se agora.</string>
+    <string name="precisa_de_ajuda">Precisa de ajuda?</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="preencha_o_email">Preencha o email</string>
+    <string name="preencha_a_senha">Preencha a senha</string>
+    <string name="tudo_pronto_para_assintir">Tudo pronto para\n assintir?</string>
+    <string name="informe_seu_email_para_criar_ou_acessar_sua_n_conta">Informe seu email para criar ou acessar sua \n conta</string>
+    <string name="vamos_l">vamos lá</string>
 </resources>
