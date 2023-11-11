@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "125269260188",
+    "project_id": "aplicativo-de-filmes-786b2",
+    "storage_bucket": "aplicativo-de-filmes-786b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125269260188:android:1a4d0d08cf8f3b357afa59",
+        "android_client_info": {
+          "package_name": "com.herick.appdefilmes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsi-rzrqf2e-5FuV34KVeI9m29w5MAM7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,11 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#03A9F4</color>
+    <color name="blue">#1753ec</color>
 
     <color name="netflixRed">#E50914</color> <!-- Vermelho do Netflix -->
     <color name="netflixBlack">#000000</color> <!-- Preto do Netflix -->
     <color name="cinza">#646464</color>
+    <color name="cinzaEscuro">#181818</color>
     <color name="orange">#FFA500</color>
 
 

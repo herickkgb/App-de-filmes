@@ -11,4 +11,9 @@
     <string name="tudo_pronto_para_assintir">Tudo pronto para\n assintir?</string>
     <string name="informe_seu_email_para_criar_ou_acessar_sua_n_conta">Informe seu email para criar ou acessar sua \n conta</string>
     <string name="vamos_l">vamos lá</string>
+    <string name="textTituloCadastro">Um mundo de séries e filmes\n ilimitados espera por você</string>
+    <string name="txtDescricaoCadastro">Crie uma conta para saber mais sobre\n o nosso App de Filmes</string>
+    <string name="series">Series</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista">Minha Lista</string>
 </resources>
