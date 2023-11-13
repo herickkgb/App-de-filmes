@@ -5,10 +5,11 @@ Este é um projeto de clone do Netflix para Android que utiliza a API externa [S
 
 # imagem do app
 <div align="center">
+  <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/999.gif?raw=true" width="150">
  <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/splash.png?raw=true" width="150">
  <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/login.png?raw=true" width="150">
  <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/telaInicial.png?raw=true" width="150">
- <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/descricao.png?raw=true" width="150">
+ <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/descricao.png?raw=true" width="150"> 
 </div>
 
 ## Funcionalidades Principais
