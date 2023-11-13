@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.herick.appdefilmes.databinding.CategoriaItemBinding
 import com.herick.appdefilmes.model.Categoria
@@ -20,6 +21,13 @@ class AdapterCategoria constructor(
 
     override fun onBindViewHolder(holder: CategoriaViewHolder, position: Int) {
         holder.title.text = listaCategoria[position].titulo
+
+
+        val categoria = listaCategoria[position]
+        holder.recyclerViewFilmes.adapter = AdapterFilme(context, categoria.filmes)
+
+        holder.recyclerViewFilmes.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
     }
 
     override fun getItemCount() = listaCategoria.size
@@ -28,5 +36,7 @@ class AdapterCategoria constructor(
     inner class CategoriaViewHolder(binding: CategoriaItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         val title = binding.txtTitle
+
+        val recyclerViewFilmes = binding.recyclerViewFilmes
     }
 }
