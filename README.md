@@ -2,6 +2,15 @@
 
 Este é um projeto de clone do Netflix para Android que utiliza a API externa [StackMobile](https://stackmobile.com.br/filmes) para obter informações sobre filmes e séries. O aplicativo inclui autenticação utilizando Firebase Authentication, permitindo aos usuários criar contas, fazer login, deslogar e excluir suas contas. Além disso, o aplicativo possui uma funcionalidade de criação de listas de reprodução, implementada com um `Adapter` personalizado, utiliza `Glide` para carregamento eficiente de imagens, `Retrofit` para realizar chamadas à API e `putExtra` para passar dados entre atividades.
 
+
+# imagem do app
+<div align="center">
+ <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/splash.png?raw=true" width="150">
+ <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/login.png?raw=true" width="150">
+ <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/telaInicial.png?raw=true" width="150">
+ <img src="https://github.com/herickkgb/App-de-filmes/blob/main/app/src/main/res/imagensApp/descricao.png?raw=true" width="150">
+</div>
+
 ## Funcionalidades Principais
 
 1. **Autenticação Firebase:**
