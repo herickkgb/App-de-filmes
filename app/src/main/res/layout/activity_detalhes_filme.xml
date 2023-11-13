@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/netflixBlack"
+    android:orientation="vertical"
+    tools:context=".view.DetalhesFilme">
+
+    <ImageView
+        android:id="@+id/imageCapa"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/netflixRed"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Nome do filme"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapa" />
+
+    <ImageView
+        android:id="@+id/icAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <TextView
+        android:id="@+id/txtMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/minha_lista"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btAssistir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icAdd" />
+
+    <Button
+        android:id="@+id/btAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_background"
+        android:drawableStart="@drawable/ic_play"
+        android:padding="15dp"
+        android:text="Assistir"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtSaibaMais"
+        app:layout_constraintStart_toEndOf="@+id/txtMinhaLista"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <ImageView
+        android:id="@+id/ic_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/ic_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toEndOf="@id/btAssistir"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <TextView
+        android:id="@+id/txtSaibaMais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="Saiba mais"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btAssistir"
+        app:layout_constraintTop_toBottomOf="@id/ic_info" />
+
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="start"
+        android:text="dfgfd"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btAssistir"
+        tools:layout_editor_absoluteX="-52dp" />
+
+    <TextView
+        android:id="@+id/elenco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="sdfs"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricao"
+        tools:layout_editor_absoluteX="-20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

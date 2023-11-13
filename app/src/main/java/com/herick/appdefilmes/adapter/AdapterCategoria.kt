@@ -11,7 +11,7 @@ import com.herick.appdefilmes.model.Categoria
 
 class AdapterCategoria constructor(
     private val context: Context,
-    private val listaCategoria: MutableList<Categoria>
+    val listaCategoria: MutableList<Categoria>
 ) : RecyclerView.Adapter<AdapterCategoria.CategoriaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriaViewHolder {

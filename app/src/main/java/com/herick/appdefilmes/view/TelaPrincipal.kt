@@ -1,14 +1,23 @@
 package com.herick.appdefilmes.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.herick.appdefilmes.adapter.AdapterCategoria
+import com.herick.appdefilmes.api.Api
 import com.herick.appdefilmes.databinding.ActivityTelaPrincipalBinding
 import com.herick.appdefilmes.model.Categoria
+import com.herick.appdefilmes.model.Categorias
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class TelaPrincipal : AppCompatActivity() {
     private var firebase = FirebaseAuth.getInstance()
@@ -29,7 +38,41 @@ class TelaPrincipal : AppCompatActivity() {
         recyclerViewFilmes.setHasFixedSize(true)
         adapterCategoria = AdapterCategoria(this, listaCategorias)
         recyclerViewFilmes.adapter = adapterCategoria
-        getCategorias()
+
+        configurandoRetrofit()
+    }
+
+    private fun configurandoRetrofit() {
+        val retrofit = Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create())
+            .baseUrl("https://stackmobile.com.br/")
+            .build()
+            .create(Api::class.java)
+
+        retrofit.listaCategorias().enqueue(object : Callback<Categorias> {
+            @SuppressLint("NotifyDataSetChanged")
+            override fun onResponse(call: Call<Categorias>, response: Response<Categorias>) {
+                if (response.code() == 200) {
+                    response.body()?.let {
+                        adapterCategoria.listaCategoria.addAll(it.categorias)
+                        adapterCategoria.notifyDataSetChanged()
+
+                        binding.ContainerProgressBar.visibility = View.GONE
+                        binding.progressBar.visibility = View.GONE
+                        binding.textCarregar.visibility = View.GONE
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<Categorias>, t: Throwable) {
+                Toast.makeText(
+                    applicationContext,
+                    "Erro, tente novamente mais tarde..",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+        })
     }
 
     private fun deslogarApp() {
@@ -48,21 +91,5 @@ class TelaPrincipal : AppCompatActivity() {
         }
     }
 
-    private fun getCategorias() {
-        val categoria1 = Categoria("Categoria 1")
-        listaCategorias.add(categoria1)
-
-        val categoria2 = Categoria("Categoria 2")
-        listaCategorias.add(categoria2)
-
-        val categoria3 = Categoria("Categoria 3")
-        listaCategorias.add(categoria3)
-
-        val categoria4 = Categoria("Categoria 4")
-        listaCategorias.add(categoria4)
-
-        val categoria5 = Categoria("Categoria 5")
-        listaCategorias.add(categoria5)
-    }
 
 }
